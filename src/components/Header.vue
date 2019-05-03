@@ -2,11 +2,6 @@
     <header>
         <nav class="navbar">
             <div class="navbar-brand is-spaced has-shadow">
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
                     <!--<a class="navbar-item">-->
                         <!--<img alt="Vue logo" src="../assets/logo.png">-->
                     <!--</a>-->
@@ -24,19 +19,19 @@
                             <b-icon icon="menu-down"></b-icon>
                         </a>
                         <b-dropdown-item value="accessibility" aria-role="menuitem">
-                            What is web accessibility ?
+                            <router-link to="/accessibility" class="nav-link" href="">What is web accessibility ?</router-link>
                         </b-dropdown-item>
                         <hr class="dropdown-divider" aria-role="menuitem">
                         <b-dropdown-item value="accessibility#core" aria-role="menuitem">
-                            Core Principles
+                            <router-link to="/accessibility#core" class="nav-link" href="">Core Principles</router-link>
                         </b-dropdown-item>
                         <hr class="dropdown-divider" aria-role="menuitem">
                         <b-dropdown-item value="accessibility-audit" aria-role="menuitem">
-                            Auditing accessibility
+                            <router-link to="/accessibility#audit" class="nav-link" href="">Auditing accessibility</router-link>
                         </b-dropdown-item>
                         <hr class="dropdown-divider" aria-role="menuitem">
                         <b-dropdown-item value="accessibility-tools" aria-role="menuitem">
-                            Accessibility Developer Tools
+                            <router-link to="/accessibility#tools" class="nav-link" href="">Accessibility Developer Tools</router-link>
                         </b-dropdown-item>
                     </b-dropdown>
                     <!--CMS Integration-->

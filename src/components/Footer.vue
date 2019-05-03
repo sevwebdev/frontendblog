@@ -1,15 +1,16 @@
 <template>
     <footer id="footer">
         <div class="container">
-          A front-end blog by SB. Code &amp; design licensed under MIT.
-        </span>
+            <span>
+              A front-end blog by SB. Code &amp; design licensed under MIT.
+            </span>
         </div>
     </footer>
 </template>
 
 <script>
   export default {
-    name: 'footer',
+    name: 'footer'
   };
 </script>
 

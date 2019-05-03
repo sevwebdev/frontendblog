@@ -1,20 +1,18 @@
 <template>
-  <div id="welcome">
+  <div id="app">
     <Header/>
-    <Home msg="The Front-end Bible"/>
+    <router-view/>
     <Footer/>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
-    Home,
     Header,
     Footer
   }
@@ -63,6 +61,9 @@ export default {
     a, a.button {
       color: $secondary-color;
     }
+    a.dropdown-item.is-active, .dropdown .dropdown-menu .has-link a.is-active, button.dropdown-item.is-active {
+      background-color: $tertiary-color;
+    }
     ul {
       list-style-type: none;
       padding: 0;
@@ -73,8 +74,14 @@ export default {
     }
 
     //layout
+    #app {
+      min-height: 80vh;
+    }
     .flex {
       display: flex;
+    }
+    .button {
+      margin-top: 1em;
     }
   }
 
